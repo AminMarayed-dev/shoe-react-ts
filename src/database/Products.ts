@@ -1,9 +1,4 @@
-const products: {
-  id: number;
-  name: string;
-  imageURL: string;
-  price: number;
-}[] = [
+const products = [
   {
     id: 1,
     name: "Nike React Infinity Run Flyknit",
