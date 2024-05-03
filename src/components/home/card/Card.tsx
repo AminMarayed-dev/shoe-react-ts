@@ -1,12 +1,18 @@
 
-import { ProductType } from '../type'
 
-function Card({product} : ProductType) {
+
+type ProductType = {
+  name:string,
+  price:number,
+  imageURL:string
+}
+
+function Card({name, price, imageURL} : ProductType) {
   return (
     <div>
-        <img src={product.imageURL} alt={product.name} />
-        <h3>{product.name}</h3>
-        <p>{product.price}</p>
+        <img src={imageURL} alt={name} />
+        <h3>{name}</h3>
+        <p>{price}</p>
     </div>
   )
 }
